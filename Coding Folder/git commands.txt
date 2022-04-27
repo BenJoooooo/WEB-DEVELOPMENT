@@ -1,0 +1,69 @@
+How to initialize a repository
+git init
+git add .
+git commit -m ""
+
+How to Add files to initialized repository
+git remote add origin <url>
+git push -u origin main
+
+How to add files to exisiting projects
+git add . 
+git commit -m ""
+git push origin
+
+--------------------------------------------------------
+
+How to delete a file on github from cmd
+git rm  <file>
+git commit -m ""
+git push origin
+
+--------------------------------------------------------
+
+How to remove remote origin in git
+git remote remove <name of the remote>
+"To delete the orgin remote from the repository:
+git remote remove origin
+"To uninitialize a git repository folder in a local machine:
+del -rf .git
+
+-----------------------------------------------------------
+Connect it to github
+You’ve now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
+
+Go to github.
+Log in to your account.
+Click the new repository button in the top-right. You’ll have an option there to initialize the repository with a README file, but I don’t.
+Click the “Create repository” button.
+Now, follow the second set of instructions, “Push an existing repository…”
+
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+Actually, the first line of the instructions will say
+
+$ git remote add origin https://github.com/username/new_repo
+--------------------------------------------------------
+…or create a new repository on the command line
+echo "# SimpleStaticWeb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/BenJoooooo/SimpleStaticWeb.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/BenJoooooo/SimpleStaticWeb.git
+git branch -M main
+git push -u origin main
+
+----------------------------------------------------------
+
+git bash tip number 1
+
+git add . && git commit -m "message" && git push
+----------------------------------------------------------------------
+Cloning a repository from github
+
+git clone /inser-link/
